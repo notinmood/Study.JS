@@ -29,12 +29,10 @@
 </body>
 <script type="text/javascript">
     var divs = document.getElementsByTagName("div");
-    for (var i = 0; i < divs.length; i++) {
-        (function (m) {
-            divs[m].onclick = function () {
-                alert(m);//都是输出：10
-            }
-        })(i);
+    for (let i = 0; i < divs.length; i++) {
+        divs[i].onclick = function () {
+            alert(i);//可以得到正确的结果
+        }
     }
 </script>
 </html>

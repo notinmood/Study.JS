@@ -13,8 +13,8 @@ for (var i = 0; i < 10; i++) {
     myArray.push(i);
 }
 
-console.log(i);//10。 这是循环完成后，i最后的值10。
-console.log(myArray);
+console.log(i); //10。 这是循环完成后，i最后的值10。
+console.log(myArray);   //[0,1,2,3,4,5,6,7,8,9]
 
 //─────────────────────────────────────
 

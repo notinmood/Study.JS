@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>闭包</title>
-    <style type="text/css">
+    <style>
         div {
             width: 100px;
             height: 100px;
@@ -30,9 +30,11 @@
 <script type="text/javascript">
     var divs = document.getElementsByTagName("div");
     for (var i = 0; i < divs.length; i++) {
-        divs[i].onclick = function () {
-            alert(i);//都是输出：10
-        }
+        (function (m) {
+            divs[m].onclick = function () {
+                alert(m);//可以得到正确的结果
+            }
+        })(i);
     }
 </script>
 </html>

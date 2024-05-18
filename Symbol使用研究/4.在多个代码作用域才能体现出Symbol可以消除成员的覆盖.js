@@ -19,10 +19,10 @@ const obj = {};
 {
     let a = Symbol();
     obj[a] = 20;
-    console.log(obj[a]);
+    console.log(obj[a]);//20
 }
 
 
 console.log(obj[a]);//10
 
-console.log(obj); //Object {Symbol(): 10, Symbol(): 20}
+console.log(obj); //{ [Symbol()]: 10, [Symbol()]: 20 }

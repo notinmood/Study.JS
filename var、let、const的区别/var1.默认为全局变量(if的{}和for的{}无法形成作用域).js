@@ -12,7 +12,7 @@ if (1 > 1) {
     /**
      * 以下两种方式均可。是否使用 var 都一样，默认都是创建全局的变量
      */
-        //myData= "Great Than";
+    //myData= "Great Than";
     var myData = "Great Than";
 } else {
     var myData = "Not Great Than";
