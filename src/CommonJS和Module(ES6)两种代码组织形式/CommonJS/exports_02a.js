@@ -11,6 +11,6 @@ function foo(){
     console.log("something!");
 }
 
-exports={
-    foo,
-}
+// 缺省情况下，exports是对module.exports的一个引用
+// 可以通过`exports.属性名=值`来添加属性。
+exports.foo=foo;

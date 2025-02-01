@@ -7,10 +7,10 @@
  * @company: HiLand & RainyTop
  */
 
-function foo(){
+function foo() {
     console.log("something!");
 }
 
-module.exports={
-    foo,
+module.exports = {
+    foo: foo,
 }

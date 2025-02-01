@@ -7,6 +7,11 @@
  * @company: HiLand & RainyTop
  */
 
-const a = module.require("./exports_01.js");
+const a = require("./exports_02a.js");
+const b = require("./exports_02b.js");
+
 console.log(a);
 a.foo();
+
+console.log(b);//{}
+// b.foo(); // 报错，因为b没有foo方法
